@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Peter's Bakery</title>
+        <style>
+            body {
+                margin:0;
+            }
+            .container {
+                width:100vm;
+                height:100vh;
+
+                font-family: 'Quicksand', sans-serif;
+                font-weight: bold;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="./assets/img/peters-bakery.png" alt="logo peters-bakery" width="150px">
+            <nav class"menu">
+                <a href="landingpage.html">Inicio</a>
+                <a href="pedidos.html">Pedido</a>
+                <a href="pasteleros.html">Pastelero</a>
+            </nav>
+        </header>
+        <div class="frase"></div>
+        <!-----
+        <img src="./assets/img/peters-bakery.png" alt="logo peters-bakery" width="150px">
+        <a href="pedidos.html">
+            <h2>Crea tu Pedido</h2>
+        </a>-->
+        <hr>
+        <form action="pedido.js">
+            <section class="infoCliente">
+                    <label for="nombre">Nombre</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre"><br>
+                    <label for="teleforno">Telefono</label><br>
+                    <input type="number" id="tel" name="tel" placeholder="Telefono"><br>
+                    <label for="email">Correo Electronico</label><br>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@ejemplo.com"><br>
+                    <label for="descripcion">Descripcion</label><br>
+                    <textarea rows="10", cols="20" id="description" name="description"></textarea>
+            </section>
+            <section class="selSabor">
+                <h4>Pastel sabor(es)</h4>
+                <input type="checkbox" id="sabor1" name="sabor1" value="Vainilla" class="check">
+                <label for="sabor1" class="seleccion">Vainilla............$150</label><br>
+                <input type="checkbox" id="sabor2" name="sabor2" value="Chocolate" class="check">
+                <label for="sabor2" class="seleccion">Chocolate............$120</label><br>
+                <input type="checkbox" id="sabor3" name="sabor3" value="Fresa" class="check">
+                <label for="sabor3" class="seleccion">Fresa............$180</label><br>
+                <input type="checkbox" id="sabor4" name="sabor4" value="Limon" class="check">
+                <label for="sabor4" class="seleccion">Limon............$50</label><br>
+                <input type="checkbox" id="sabor5" name="sabor5" value="Mermelada" class="check">
+                <label for="sabor5" class="seleccion">Mermelada............$50</label><br>
+            </section>
+            <section class="selDecor">
+                <h4>Decora el pastel</h4>
+                <input type="checkbox" id="deco1" name="deco1" value="DripCake" class="check">
+                <label for="deco1" class="seleccion">Drip Cake............$250</label><br>
+                <input type="checkbox" id="deco2" name="deco2" value="Floral" class="check">
+                <label for="deco2" class="seleccion">Floral............$100</label><br>
+                <input type="checkbox" id="deco3" name="deco3" value="Marmol" class="check">
+                <label for="deco3" class="seleccion">Marmol............$150</label><br>
+                <input type="checkbox" id="deco4" name="deco4" value="Texturizado" class="check">
+                <label for="deco4" class="seleccion">Texturizado 3D............$350</label><br>
+                <input type="checkbox" id="deco5" name="deco5" value="Lettering" class="check">
+                <label for="deco5" class="seleccion">Lettering............$150</label><br>
+            </section>
+        </form>
+        </nav>
+        <footer>
+            <dl>
+                <dt>Direccion</dt>
+                    <dd>Gustavo Becquer #550, Colonia Anahuac</dd>
+                    <dd>Codigo Postal: 66450</dd>
+                    <dt>Telefono</dt>
+                    <dd>+5218110500082</dd>
+                <dt>
+                    <dd>Lunes a Viernes de 9:00 am a 7:00pm</dd>
+                </dt>
+            </dl>  
+        </footer>
+    </body>
+</html>

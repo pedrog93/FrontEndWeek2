@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Peter's Bakery</title>
+        <style>
+            body {
+                margin:0;
+            }
+            .container {
+                width:100vm;
+                height:100vh;
+
+                font-family: 'Quicksand', sans-serif;
+                font-weight: bold;
+                font-size: 10px;
+
+                display: grid;
+
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 100px 1fr 1fr 1fr 100px;
+
+                gap: 10px;
+
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            .container div{
+                padding: 10px;
+                border: 1px solid #000;
+            }
+            .header {
+                grid-column-start: 1;
+                grid-column-end: 5;
+            }
+            .content-large{
+                grid-row-start: 2;
+                grid-row-end: span 2;
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
+            .footer{
+                grid-column-start: 1;
+                grid-column-end: span 4;
+            }
+            .topnav{
+                overflow: hidden;
+                background-color: #333;
+            }
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <img src="./assets/img/peters-bakery.png" alt="logo peters-bakery" width="100px">
+                <nav class="topnav">
+                    <a href="landingpage.html">Inicio</a>
+                    <a href="pedidos.html">Pedido</a>
+                    <a href="pasteleros.html">Pastelero</a>
+                </nav>
+            </header>
+            <div class="content-large">
+                <p>Bienvendios a Peter bakery</p><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus neque eget felis consequat maximus. 
+                    Sed vel leo et enim facilisis hendrerit. Quisque ullamcorper metus non urna molestie, in varius felis auctor. 
+                    Fusce ultricies consequat ipsum nec mattis. Sed aliquet, lacus et rhoncus imperdiet, enim ligula sodales tellus, 
+                    a vehicula diam augue sed sapien. Aenean ultrices fringilla vehicula. Quisque congue sem ac quam molestie, 
+                    non tempor nibh mollis. Mauris vel tincidunt nunc, iaculis posuere ex. Aliquam bibendum arcu et urna laoreet, ac ultricies nisl tincidunt. </p>
+            </div>
+            <div class="content-small">
+                <a href="pedidos.html">Pedido</a>
+            </div>
+            <div class="content-small">
+                <a href="pasteleros.html">Pastelero</a>
+            </div>
+            <footer class="footer">
+                <dl>
+                    <dt>Direccion</dt>
+                        <dd>Gustavo Becquer #550, Colonia Anahuac</dd>
+                        <dd>Codigo Postal: 66450</dd>
+                        <dt>Telefono</dt>
+                        <dd>+5218110500082</dd>
+                    <dt>
+                        <dd>Lunes a Viernes de 9:00 am a 7:00pm</dd>
+                    </dt>
+                </dl>  
+            </footer>
+        </div>
+    </body>
+</html>
